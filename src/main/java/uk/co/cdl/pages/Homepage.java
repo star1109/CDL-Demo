@@ -1,7 +1,5 @@
 package uk.co.cdl.pages;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +8,7 @@ import uk.co.cdl.utility.Utility;
 
 public class Homepage extends Utility
 {
-    private static final Logger log = LogManager.getLogger(Homepage.class.getName());
+  //  private static final Logger log = LogManager.getLogger(Homepage.class.getName());
 
     public Homepage() {
         PageFactory.initElements(driver, this);
@@ -31,7 +29,7 @@ public class Homepage extends Utility
 
     public void clickOnMenuBar()
     {
-        log.info("Clicking on Hamburger option");
+        //log.info("Clicking on Hamburger option");
         clickOnElement(menubar);
     }
 
